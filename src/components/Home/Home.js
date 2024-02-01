@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useState } from "react";
 import { VANTA } from 'vanta';
 import BIRDS from './images/vanta.birds.min.js';
 import RINGS from './images/vanta.rings.min.js';
@@ -23,6 +24,7 @@ import arrow from './images/arrow.png';
 import './Home.css';
 
 function Home() {
+    
     useEffect(() => {
         VANTA.BIRDS({
             el: "#myid",
