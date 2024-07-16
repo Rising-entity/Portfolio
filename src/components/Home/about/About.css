@@ -1,0 +1,39 @@
+.About {
+    height: 500px;
+    margin-top: 30px;
+
+}
+
+.About .info {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.About p {
+    text-align: left;
+}
+
+
+.About .skillSet .row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.About .skillSet .row div {
+    margin: 10px 10px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    padding: 4px 0px;
+}
+
+.skillSet img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.skillSet img:hover {
+    transform: scale(1.1);
+}

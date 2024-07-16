@@ -9,30 +9,34 @@
 
 
 
-.Home .Navbar .logo1 {
+ .Navbar .logo1 {
     margin-left: 32px;
     width: 50px;
 }
 
-.Home .Navbar nav {
+ .Navbar nav {
     padding: 0px;
     font-weight: bold;
 
 }
 
-.Home .Navbar {
+ .Navbar {
     padding-top: 10px;
+    background: #f7f7f7;
+    box-shadow: 3px -2px 10px gray;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+  
 
 }
 
-.Home .Navbar nav a {
+ .Navbar nav a {
 
     color: black;
-    /* color: orange; */
 }
 
 .Home .section1 {
-    /* background-color: aqua; */
     width: 100%;
     min-height: 498px;
     display: flex;
@@ -42,8 +46,18 @@
 }
 
 .Home .section1 #box1 {
-    width: 65%;
-    /* background-color: blueviolet; */
+    width: 100%;
+}
+
+.Home .section1 #box1 .box12 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Home .section1 #box1 p {
+    width: 60%;
+    text-align: center;
 }
 
 .Home .section1 #box1 h1 {
@@ -84,13 +98,9 @@ p {
 
 /* section2 started */
 
-.Home .section2 {
-    background-color: #f7f7f7;
-
-}
 
 .Home .section2 h1 {
-    text-decoration: underline 5px;
+    margin: 20px 0px;
 
 }
 
@@ -105,12 +115,44 @@ p {
 .Home .section2 .row .box {
     background: white;
     box-shadow: 2px 2px 10px gray;
-    /* border: 2px solid black; */
-    width: 80%;
+    width: 70%;
     min-height: 188px;
     text-align: center;
     border-radius: 8px;
-    margin: 22px 0px 0px 36px;
+    font-size: 26px;
+    padding: 13px;
+
+}
+
+.Home .section2 .row .box p {
+
+    font-size: 13px;
+
+}
+
+.Home .section2 .coln {
+    margin: 10px 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.Home .section2 .coln a {
+    margin: 0px 10px;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 0px 10px 2px 10px;
+    font-size: 15px;
+    background: black;
+    border-radius: 10px;
+    color: white;
+
+}
+
+.Home .section2 .coln a:hover {
+    background: white;
+    color: black;
 
 }
 
@@ -118,7 +160,6 @@ p {
 /* section3 started */
 
 .Home .section3 {
-    background-color: #f7f7f7;
 
     padding-bottom: 35px;
 
@@ -128,7 +169,6 @@ p {
     text-align: center;
     padding-top: 36px;
     margin: 0px 0px 36px 0px;
-    text-decoration: underline 5px;
 }
 
 .Home .section3 img {
@@ -143,10 +183,6 @@ p {
     font-family: monospace;
 }
 
-/* .Home .section3 div div {
-    border:  2px solid black;
-
-} */
 
 /* section4 started */
 .Home .section4 h1 {
@@ -161,12 +197,9 @@ p {
 }
 
 
-.Home .section4 {
-    background-color: #f7f7f7;
 
-}
 
-.Home .section4 a {
+.Home .section4 #mail {
     margin: 0px auto;
     margin-bottom: 38px;
     display: block;
@@ -180,7 +213,7 @@ p {
     border-radius: 19px;
 }
 
-.Home .section4 a:hover {
+.Home .section4 #mail:hover {
     background-color: black;
     color: white;
     border: 2px solid black;
@@ -193,4 +226,15 @@ p {
 
 .Home .section4 img {
     width: 50px;
+}
+
+@media (max-width: 700px) {
+    .Home .section1 #box1 p {
+        width: 95%;
+    }
+
+    .Home .section1 {
+        min-height: 584px;
+
+    }
 }
