@@ -3,7 +3,7 @@ import Home from "./components/Home/Home";
 import About from "./components/Home/about/About"
 function App() {
   return (
-
+    
     <Router>
       <div className="App">
         <Routes>
