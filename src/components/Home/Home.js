@@ -249,7 +249,9 @@ function Home() {
                             <h2>find me on</h2>
                             <div>
                                 <a href="https://www.linkedin.com/in/ashtekarmayank/" target='blank'>  <img src={linkedin} alt="" /></a>
+
                                 <a href="https://www.instagram.com/rising.entity/" target='blank'><img src={instagram} alt="" /></a>
+
                                 <a href="https://github.com/Rising-entity" target='blank'> <img style={{ width: "39px", margin: "0px 0px 0px 3px" }} src={github} alt="" /></a>
                             </div>
                         </div>
@@ -270,107 +272,7 @@ function Home() {
                 </div>
 
             </div>
-            {/* <div id='myid2'>
 
-                <div className="section2 " id='sec2' ref={section2Ref}>
-                    <h1 style={{ textAlign: "center" }}>my <span style={{ color: "#2978b5" }}>projects</span></h1>
-
-                    <div className='d-flex justify-content-center' >
-                        <div className="row  ">
-                            <div className="col-md-4 coln">
-                                <div className='box'>
-                                    <h2>Nutri-fit</h2>
-                                    <p>Nutri-Fit enables users to access the nutritional content of any food
-                                        they input with seamless integration of the Nutrition API from API Ninjas. Additionally, users can also read
-                                        health-related news on the website through the integration of the Bing News API</p>
-                                    <a href="https://64be7048d129ed106859a41c--cozy-tarsier-41bdab.netlify.app" target='blank'>demo</a>
-                                    <a href="https://github.com/Rising-entity/Nutrifit-Final" target='blank'>repo.</a>
-
-                                </div>
-                            </div>
-                            <div className="col-md-4 coln">
-                                <div className='box'>
-                                    <h2>NewsHub</h2>
-                                    <p>News Hub is a dynamic and user-friendly website designed to deliver timely news and information to
-                                        users. Powered by a robust Bing News API, site aggregates news articles, headlines, and updates from
-                                        diverse sources .
-                                    </p>
-                                    <div>
-                                        <a href="https://64c08f06288a3515e91d89a6--classy-khapse-5ce3a1.netlify.app" target='blank'>demo</a>
-                                        <a href="https://github.com/Rising-entity/NewsHub" target='blank'>repo.</a>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                            <div className="col-md-4 coln">
-                                <div className='box'>
-                                    <h2>N/A</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quis sapiente beatae esse laborum voluptatibus, animi voluptatem eligendi excepturi quisquam consequuntur repellat harum quaerat, eaque rerum praesentium ad enim. Sapiente.</p>
-                                    <a href="">demo</a>
-                                    <a href="">repo.</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <hr style={{ margin: "0px" }} />
-
-
-                <div className="section3">
-                    <h1>skill-<span style={{ color: "#2978b5" }}>set</span></h1>
-
-                    <div>
-                        <div className="languages">
-                            <h2>languages</h2>
-                            <div style={{ display: "flex", justifyContent: "center" }}>
-                                <img src={c} alt="" /> <img src={cplus} alt="" /><img src={python} alt="" /><img src={sql} alt="" />
-                            </div>
-
-                        </div>
-                        <div className="webdev">
-                            <h2>web development</h2>
-                            <div style={{ display: "flex", justifyContent: "center" }}>
-                                <img src={html} alt="" /> <img src={css} alt="" /><img src={js} alt="" /><img src={react} alt="" />
-                            </div>
-                        </div>
-                        <div className="tools">
-                            <h2>tools and libraries</h2>
-                            <div style={{ display: "flex", justifyContent: "center" }}>
-                                <img src={vscode} alt="" /> <img src={bootstrap} alt="" /><img src={netlify} alt="" />
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <hr style={{ margin: "0px" }} />
-
-                <div className="section4" id='sec4' ref={contactRef}>
-
-                    <div>
-                        <h1>contact</h1>
-                        <a href="mailto:ashtekarmayank@gmail.com" target='blank'>email me</a>
-                        <h2>find me on</h2>
-                        <div><img src={linkedin} alt="" /><img src={instagram} alt="" /> <img style={{ width: "39px", margin: "0px 0px 0px 3px" }} src={github} alt="" /> </div>
-                    </div>
-
-                </div>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                    <span style={{
-                        margin: "auto", paddingLeft: "35px", marginTop: "31px",
-                        color: "#02109d"
-                    }}>Created By Mayank Ashtekar</span>
-                    <a href="#myid">  <img src={arrow} alt="" style={{ width: "35px", marginTop: "20px" }} /></a>
-
-                </div>
-
-
-
-
-            </div> */}
 
 
         </div >

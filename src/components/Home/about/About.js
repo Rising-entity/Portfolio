@@ -37,7 +37,7 @@ export default function About() {
             <div className="Navbar">
                 <nav className="navbar navbar-expand-lg ">
                     <div className="container-fluid">
-                        <Link className="navbar-brand" to="#">
+                        <Link className="navbar-brand" to="/">
                             <img className="logo1" src={logo1} alt="" />
                         </Link>
                         <button
