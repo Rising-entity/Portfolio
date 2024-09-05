@@ -114,15 +114,20 @@ p {
 }
 
 .Home .section2 .row .box {
-    background: white;
-    box-shadow: 2px 2px 10px gray;
+    background: #eeeeee00;
+    box-shadow: 0px 0px 5px #00ffe7a6;
+    border: 2px solid #2978b5;
     width: 70%;
     min-height: 188px;
     text-align: center;
     border-radius: 8px;
     font-size: 26px;
     padding: 13px;
+    transition: transform 0.3s ease;
+}
 
+.Home .section2 .row .box:hover {
+    transform: scale(1.1);
 }
 
 .Home .section2 .row .box p {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import logo1 from '../images/logo1.png';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
@@ -17,10 +17,23 @@ import react from '../about/imgaes/react.png';
 import vscode from '../about/imgaes/vscode.png';
 import netlify from '../about/imgaes/netlify.png';
 import bootstrap from '../about/imgaes/bootstrap.png';
+import nodejs from '../images/nodejs.png';
+import mongo from '../images/mongo.png';
+import git from '../images/git.png';
+import github2 from '../images/github2.png';
+import tailwind from '../images/tailwind.png';
 import github from '../about/imgaes/github.png';
 import arrow from '../images/arrow.png';
 
 export default function About() {
+
+    useEffect(() => {
+        // Scroll to the .about element when the component mounts
+        const aboutSection = document.querySelector('.About');
+        if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, []);
 
     const navigate = useNavigate();
 
@@ -134,14 +147,17 @@ export default function About() {
                         <div className="col-md-2 col-5"><img src={css} alt="" style={{ width: "60px" }} /></div>
                         <div className="col-md-2 col-5"><img src={js} alt="" style={{ width: "60px" }} /></div>
                         <div className="col-md-2 col-5"><img src={react} alt="" style={{ width: "60px" }} /></div>
-                        <div className="col-md-2 col-5 "><img src={react} alt="" style={{ width: "60px" }} /></div>
-                        <div className="col-md-2 col-5"><img src={react} alt="" style={{ width: "60px" }} /></div>
+                        <div className="col-md-2 col-5 "><img src={nodejs} alt="" style={{ width: "60px" }} /></div>
+                        <div className="col-md-2 col-5"><img src={mongo} alt="" style={{ width: "60px" }} /></div>
                     </div>
                     <h2 style={{ margin: "20px 0px" }}>tools <span style={{ color: "rgb(41, 120, 181)" }}>I use </span></h2>
                     <div className="row r3 ">
                         <div className="col-md-2 col-5"><img src={vscode} alt="" style={{ width: "60px" }} /></div>
                         <div className="col-md-2 col-5"><img src={bootstrap} alt="" style={{ width: "60px" }} /></div>
+                        <div className="col-md-2 col-5"><img src={tailwind} alt="" style={{ width: "60px" }} /></div>
                         <div className="col-md-2 col-5"><img src={netlify} alt="" style={{ width: "60px" }} /></div>
+                        <div className="col-md-2 col-5"><img src={git} alt="" style={{ width: "60px" }} /></div>
+                        <div className="col-md-2 col-5"><img src={github2} alt="" style={{ width: "60px" }} /></div>
                     </div>
 
 

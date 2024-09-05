@@ -21,6 +21,11 @@ import instagram from './images/instagram.png';
 import linkedin from './images/linkedin.png';
 import github from './images/github.png';
 import arrow from './images/arrow.png';
+import mongo from './images/mongo.png';
+import nodejs from './images/nodejs.png';
+import tailwind from './images/tailwind.png';
+import git from './images/git.png';
+import github2 from './images/github2.png';
 import './Home.css';
 
 
@@ -155,7 +160,7 @@ function Home() {
                         </div>
 
                         <div style={{ display: "flex", justifyContent: "center" }}>
-                            <a className="btn content-download button-main button-scheme" href={`${process.env.PUBLIC_URL}/Resume.pdf`} download="Resume" >Download CV</a>
+                            <a className="btn content-download button-main button-scheme" href={`${process.env.PUBLIC_URL}/Resume2.pdf`} download="Resume" >Download CV</a>
                         </div>
                     </div>
 
@@ -218,22 +223,86 @@ function Home() {
                         <div>
                             <div className="languages">
                                 <h2>languages</h2>
-                                <div style={{ display: "flex", justifyContent: "center" }}>
-                                    <img src={c} alt="" /> <img src={cplus} alt="" /><img src={python} alt="" /><img src={sql} alt="" />
+                                
+
+                                <div className="container">
+                                    <div className="row justify-content-center">
+                                        <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
+                                            <img src={c} alt="c lang"  />
+                                        </div>
+                                        <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
+                                            <img src={cplus} alt="c++"  />
+                                        </div>
+                                        <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
+                                            <img src={python} alt="python"  />
+                                        </div>
+                                        <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
+                                            <img src={sql} alt="sql" />
+                                        </div>
+
+                                    </div>
                                 </div>
 
                             </div>
                             <div className="webdev">
                                 <h2>web development</h2>
-                                <div style={{ display: "flex", justifyContent: "center" }}>
-                                    <img src={html} alt="" /> <img src={css} alt="" /><img src={js} alt="" /><img src={react} alt="" />
+
+
+                                <div className="container">
+                                    <div className="row justify-content-center">
+                                        <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
+                                            <img src={html} alt="HTML" />
+                                        </div>
+                                        <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
+                                            <img src={css} alt="CSS" />
+                                        </div>
+                                        <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
+                                            <img src={js} alt="JavaScript" />
+                                        </div>
+                                        <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
+                                            <img src={react} alt="React" />
+                                        </div>
+                                        <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
+                                            <img src={nodejs} alt="Node.js" />
+                                        </div>
+                                        <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
+                                            <img src={mongo} alt="MongoDB" />
+                                        </div>
+                                    </div>
                                 </div>
+
+
                             </div>
+
+
+
                             <div className="tools">
                                 <h2>tools and libraries</h2>
-                                <div style={{ display: "flex", justifyContent: "center" }}>
-                                    <img src={vscode} alt="" /> <img src={bootstrap} alt="" /><img src={netlify} alt="" />
+
+                                <div className="container">
+                                    <div className="row justify-content-center">
+                                        <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
+                                            <img src={vscode} alt="vscode" />
+                                        </div>
+                                        <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
+                                            <img src={bootstrap} alt="bootstrap" />
+                                        </div>
+                                        <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
+                                            <img src={tailwind} alt="tailwind" />
+                                        </div>
+                                        <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
+                                            <img src={netlify} alt="netlify" />
+                                        </div>
+                                        <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
+                                            <img src={git} alt="git" />
+                                        </div>
+                                        <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
+                                            <img src={github2} alt="github" />
+                                        </div>
+                                    </div>
                                 </div>
+
+
                             </div>
 
                         </div>
