@@ -152,7 +152,7 @@ function Home() {
                         <h1>
                             MAYANK <span style={{ color: "#2978b5" }}>ASHTEKAR</span>
                         </h1>
-                        <h2>Software Developer</h2>
+                        <h2>Web Developer</h2>
                         <div className='box12'>
                             <p >
                                 Hi, I’m Mayank Ashtekar, a self-taught programmer with a passion for web development and computer science. I love to learn new things and keep myself updated with the latest technologies.
@@ -160,7 +160,7 @@ function Home() {
                         </div>
 
                         <div style={{ display: "flex", justifyContent: "center" }}>
-                            <a className="btn content-download button-main button-scheme" href={`${process.env.PUBLIC_URL}/Resume2.pdf`} download="Resume" >Download CV</a>
+                            <a className="btn content-download button-main button-scheme" href={`${process.env.PUBLIC_URL}/Resume2.pdf`} download="Resume" >Download Resume</a>
                         </div>
                     </div>
 
