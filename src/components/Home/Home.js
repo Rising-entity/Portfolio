@@ -4,8 +4,6 @@ import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { VANTA } from 'vanta';
 import logo1 from './images/logo1.png';
-import logo2 from './images/logo2.png';
-import img1 from './images/img1.png';
 import c from './images/c.png';
 import cplus from './images/c++.png';
 import python from './images/python.png';
@@ -59,7 +57,6 @@ function Home() {
         // Initialize VANTA.BIRDS effect
         vantaRef.current = VANTA.BIRDS({
             el: '#myid',
-            // el: el,
             mouseControls: true,
             touchControls: true,
             gyroControls: false,
@@ -189,8 +186,8 @@ function Home() {
                                                 they input with seamless integration of the Nutrition API from API Ninjas. Additionally, users can also read
                                                 health-related news on the website through the integration of the Bing News API</p>
                                             <div className='tempo'>
-                                                <a href="https://64be7048d129ed106859a41c--cozy-tarsier-41bdab.netlify.app" target='blank'>demo</a>
-                                                <a href="https://github.com/Rising-entity/Nutrifit-Final" target='blank'>repo.</a>
+                                                <a href="https://64be7048d129ed106859a41c--cozy-tarsier-41bdab.netlify.app" target='blank'>Web Link</a>
+                                                <a href="https://github.com/Rising-entity/Nutrifit-Final" target='blank'>GitHub</a>
                                             </div>
 
                                         </div>
@@ -208,8 +205,8 @@ function Home() {
                                                 work in progress
                                             </p>
                                             <div className='tempo'>
-                                                <a href="#" target='blank'>demo</a>
-                                                <a href="https://github.com/Rising-entity/Frozen-Delight.git" target='blank'>repo.</a>
+                                                <a href="#" target='blank'>Web Link</a>
+                                                <a href="https://github.com/Rising-entity/Frozen-Delight.git" target='blank'>GitHub</a>
                                             </div>
                                         </div>
 
@@ -224,8 +221,8 @@ function Home() {
                                             <h2>News Hub</h2>
                                             <p>News Hub is a dynamic and user-friendly website designed to deliver timely news and information to users. Powered by a robust Google News API, site aggregates news articles, headlines, and updates from diverse sources worldwide</p>
                                             <div className='tempo'>
-                                                <a href="https://newshubforyou.netlify.app/" target='blank'>demo</a>
-                                                <a href="https://github.com/Rising-entity/news-app" target='blank'>repo.</a>
+                                                <a href="https://newshubforyou.netlify.app/" target='blank'>Web Link</a>
+                                                <a href="https://github.com/Rising-entity/news-app" target='blank'>GitHub</a>
                                             </div>
 
                                         </div>
@@ -252,30 +249,7 @@ function Home() {
 
                                     </div>
                                 </div>
-                                {/* <div className="col-md-4 coln">
-                                    <div className='box'>
-                                        <h2>NewsHub</h2>
-                                        <p>News Hub is a dynamic and user-friendly website designed to deliver timely news and information to
-                                            users. Powered by a robust Bing News API, site aggregates news articles, headlines, and updates from
-                                            diverse sources .
-                                        </p>
-                                        <div>
-                                            <a href="https://64c08f06288a3515e91d89a6--classy-khapse-5ce3a1.netlify.app" target='blank'>demo</a>
-                                            <a href="https://github.com/Rising-entity/NewsHub" target='blank'>repo.</a>
-                                        </div>
 
-
-                                    </div>
-                                </div>
-
-                                <div className="col-md-4 coln">
-                                    <div className='box'>
-                                        <h2>N/A</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quis sapiente beatae esse laborum voluptatibus, animi voluptatem eligendi excepturi quisquam consequuntur repellat harum quaerat, eaque rerum praesentium ad enim. Sapiente.</p>
-                                        <a href="">demo</a>
-                                        <a href="">repo.</a>
-                                    </div>
-                                </div> */}
                             </div>
 
                         </div>

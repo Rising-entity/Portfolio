@@ -25,7 +25,6 @@
     padding-top: 10px;
     padding-bottom: 5px;
     background: #f7f7f7;
-    /* background: white; */
     box-shadow: 3px -2px 10px gray;
     position: sticky;
     top: 0px;
@@ -41,7 +40,6 @@
 
 .Home .section1 {
     width: 100%;
-    /* min-height: 498px; */
     min-height: 90vh;
     display: flex;
     justify-content: center;
@@ -73,6 +71,7 @@
 
 .Home .section1 #box1 h2 {
     font-size: 241%;
+    font-family: 'Poppins', sans-serif;
 
 
 }
@@ -120,9 +119,7 @@ p {
 }
 
 .Home .section2 .row .box {
-    /* background: #81d4fa2b; */
     box-shadow: 0px 0px 4px 0px #3d3c3c7d;
-    /* border: 2px solid #2978b5; */
     width: 84%;
     min-height: 104%;
     text-align: center;
@@ -145,7 +142,6 @@ p {
 
 
 .Home .section2 .coln {
-    /* margin: 10px 0px; */
     padding: 0px;
     display: flex;
     justify-content: center;
@@ -171,7 +167,6 @@ p {
 }
 
 .Home .section2 h2 {
-    /* font-size: 241%; */
     margin-top: .5rem;
     font-size: 1.5rem;
     color: #2978b5;

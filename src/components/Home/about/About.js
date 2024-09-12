@@ -3,9 +3,7 @@ import logo1 from '../images/logo1.png';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import "../about/About.css"
-import dp from "../about/imgaes/DSC_0259.JPG"
-import dp2 from "../about/imgaes/dp2.jpg"
-import dp3 from "../about/imgaes/dp3.jpg"
+import dp3 from "../about/imgaes/dp2.jpg"
 import c from '../about/imgaes/c.png';
 import cplus from '../about/imgaes/c++.png';
 import python from '../about/imgaes/python.png';
@@ -22,7 +20,6 @@ import mongo from '../images/mongo.png';
 import git from '../images/git.png';
 import github2 from '../images/github2.png';
 import tailwind from '../images/tailwind.png';
-import github from '../about/imgaes/github.png';
 import arrow from '../images/arrow.png';
 
 export default function About() {
@@ -92,45 +89,19 @@ export default function About() {
             <div className="container-fluid About " id='ab'>
                 <div className="row info " style={{ margin: "10px", minHeight: "457px" }}>
                     <div className=" col-md-8 col1" >
-                        <h1 style={{ textAlign: "center" }}>about <span style={{ color: "rgb(41, 120, 181)" }}>me</span></h1>
-                        <p>Hi Everyone, I am Mayank Ashtekar from Nagpur, India.
-                            I am currently employed as a software developer at Persistent Systems.
-                            I have completed my Btech in Electronics Engineering from YCCE Nagpur,Maharashtra.
+                        <h1 style={{ textAlign: "center", marginBottom: "1.5rem" }}>about <span style={{ color: "rgb(41, 120, 181)" }}>me</span></h1>
+                        <p>Hi ,I'm Mayank Ashtekar from Nagpur, India, with a B.Tech in Electronics Engineering from Yeshwantrao Chavan College of Engineering, Nagpur. I have a strong interest in computer science and programming, and I’ve developed skills in C, C++, Python, and SQL through various online courses.
 
+                            I am passionate about web development and eager to learn about new technologies. I aim to use my skills and knowledge to create innovative solutions that solve real-world problems."
                         </p>
-                        <p> Apart from coding, some other activities that I love to do!</p>
 
-                        <p>Playing Cricket</p>
-                        <p>Travelling </p>
 
-                        <p>"Strive to build things that make a difference!"
-
-                            .. Mayank</p>
+                        <p style={{ color: "#2978b5" }}>"Strive to build things that make a difference!" <span style={{ color: "black" }}>.....Mayank</span></p>
                     </div>
                     <div className=" col-md-4 col2">
-                        {/* <div id="carouselExampleFade" className="carousel slide carousel-fade"  >
-                            <div className="carousel-inner" style={{ borderRadius: "10px" }}>
-                                <div className="carousel-item active">
-                                    <img src={dp3} className="d-block w-100 img-fluid " alt="..." />
-                                </div>
-                                <div className="carousel-item">
-                                    <img src={dp3} className="d-block w-100 img-fluid " alt="..." />
-                                </div>
-                                <div className="carousel-item">
-                                    <img src={dp3} className="d-block w-100 img-fluid " alt="..." />
-                                </div>
-                            </div>
-                            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                                <span className="carousel-control-prev-icon" aria-hidden="true" />
-                                <span className="visually-hidden">Previous</span>
-                            </button>
-                            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                                <span className="carousel-control-next-icon" aria-hidden="true" />
-                                <span className="visually-hidden">Next</span>
-                            </button>
-                        </div> */}
+
                         <div>
-                            <img src={dp3} alt="" style={{width:"100%", margin:"0px 0px 10px 0px"}} />
+                            <img src={dp3} alt="" style={{ width: "100%", margin: "0px 0px 10px 0px" }} />
 
                         </div>
 
