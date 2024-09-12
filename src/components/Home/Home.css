@@ -73,6 +73,8 @@
 
 .Home .section1 #box1 h2 {
     font-size: 241%;
+
+
 }
 
 .Home .section1 #box1 a {
@@ -111,18 +113,18 @@ p {
 
 .Home .section2 .row {
     width: 100%;
-    padding-bottom: 56px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
 
 }
 
 .Home .section2 .row .box {
-    background: #eeeeee00;
-    box-shadow: 0px 0px 5px #00ffe7a6;
-    border: 2px solid #2978b5;
-    width: 70%;
-    min-height: 188px;
+    /* background: #81d4fa2b; */
+    box-shadow: 0px 0px 4px 0px #3d3c3c7d;
+    /* border: 2px solid #2978b5; */
+    width: 84%;
+    min-height: 104%;
     text-align: center;
     border-radius: 8px;
     font-size: 26px;
@@ -130,18 +132,20 @@ p {
     transition: transform 0.3s ease;
 }
 
+
 .Home .section2 .row .box:hover {
     transform: scale(1.1);
 }
 
 .Home .section2 .row .box p {
 
-    font-size: 13px;
-
+    font-size: 11px;
+    margin-bottom: 0rem;
 }
 
+
 .Home .section2 .coln {
-    margin: 10px 0px;
+    /* margin: 10px 0px; */
     padding: 0px;
     display: flex;
     justify-content: center;
@@ -163,6 +167,14 @@ p {
 .Home .section2 .coln a:hover {
     background: white;
     color: black;
+
+}
+
+.Home .section2 h2 {
+    /* font-size: 241%; */
+    margin-top: .5rem;
+    font-size: 1.5rem;
+    color: #2978b5;
 
 }
 
@@ -246,6 +258,7 @@ p {
     .Home .section1 #box1 p {
         width: 95%;
     }
+
     .Home .section1 #box1 h1 {
         font-size: 400%;
     }
@@ -253,5 +266,26 @@ p {
     .Home .section1 {
         min-height: 677px;
 
+    }
+
+    .Home .col-md-4 {
+        margin: 0px 0px 40px 0px;
+    }
+
+    .Home .section2 .row {
+        margin-bottom: 0px;
+
+    }
+
+    .Home .tempo {
+        margin-bottom: 10px;
+    }
+
+    .Navbar {
+        min-height: 7vh;
+    }
+
+    .Navbar li {
+        margin-left: 32px;
     }
 }

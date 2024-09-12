@@ -108,13 +108,13 @@ export default function About() {
                             .. Mayank</p>
                     </div>
                     <div className=" col-md-4 col2">
-                        <div id="carouselExampleFade" className="carousel slide carousel-fade"  >
+                        {/* <div id="carouselExampleFade" className="carousel slide carousel-fade"  >
                             <div className="carousel-inner" style={{ borderRadius: "10px" }}>
                                 <div className="carousel-item active">
-                                    <img src={dp} className="d-block w-100 img-fluid " alt="..." />
+                                    <img src={dp3} className="d-block w-100 img-fluid " alt="..." />
                                 </div>
                                 <div className="carousel-item">
-                                    <img src={dp2} className="d-block w-100 img-fluid " alt="..." />
+                                    <img src={dp3} className="d-block w-100 img-fluid " alt="..." />
                                 </div>
                                 <div className="carousel-item">
                                     <img src={dp3} className="d-block w-100 img-fluid " alt="..." />
@@ -128,6 +128,10 @@ export default function About() {
                                 <span className="carousel-control-next-icon" aria-hidden="true" />
                                 <span className="visually-hidden">Next</span>
                             </button>
+                        </div> */}
+                        <div>
+                            <img src={dp3} alt="" style={{width:"100%", margin:"0px 0px 10px 0px"}} />
+
                         </div>
 
                     </div>

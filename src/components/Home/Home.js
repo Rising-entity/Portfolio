@@ -27,6 +27,11 @@ import tailwind from './images/tailwind.png';
 import git from './images/git.png';
 import github2 from './images/github2.png';
 import './Home.css';
+import newshub from "./images/newshub.png";
+import nutrifit from "./images/nutrifit.png"
+import fd from "./images/fd.png"
+import health from "./images/health.png"
+
 
 
 
@@ -160,7 +165,7 @@ function Home() {
                         </div>
 
                         <div style={{ display: "flex", justifyContent: "center" }}>
-                            <a className="btn content-download button-main button-scheme" href={`${process.env.PUBLIC_URL}/Resume2.pdf`} download="Resume" >Download Resume</a>
+                            <a className="btn content-download button-main button-scheme" href={`${process.env.PUBLIC_URL}/Mayank Ashtekar Resume.pdf`} download="Resume" >Download Resume</a>
                         </div>
                     </div>
 
@@ -173,20 +178,81 @@ function Home() {
                     <div className="section2 " id='sec2' ref={section2Ref}>
                         <h1 style={{ textAlign: "center" }}>my <span style={{ color: "#2978b5" }}>projects</span></h1>
 
-                        <div className='d-flex justify-content-center' >
-                            <div className="row  ">
+                        <div className='d-flex justify-content-center baseline' >
+                            <div className="row ">
                                 <div className="col-md-4 coln">
                                     <div className='box'>
-                                        <h2>Nutri-fit</h2>
-                                        <p>Nutri-Fit enables users to access the nutritional content of any food
-                                            they input with seamless integration of the Nutrition API from API Ninjas. Additionally, users can also read
-                                            health-related news on the website through the integration of the Bing News API</p>
-                                        <a href="https://64be7048d129ed106859a41c--cozy-tarsier-41bdab.netlify.app" target='blank'>demo</a>
-                                        <a href="https://github.com/Rising-entity/Nutrifit-Final" target='blank'>repo.</a>
+                                        <img src={nutrifit} alt="" style={{ width: "100%", height: "50%" }} />
+                                        <div>
+                                            <h2>Nutri-fit</h2>
+                                            <p>Nutri-Fit enables users to access the nutritional content of any food
+                                                they input with seamless integration of the Nutrition API from API Ninjas. Additionally, users can also read
+                                                health-related news on the website through the integration of the Bing News API</p>
+                                            <div className='tempo'>
+                                                <a href="https://64be7048d129ed106859a41c--cozy-tarsier-41bdab.netlify.app" target='blank'>demo</a>
+                                                <a href="https://github.com/Rising-entity/Nutrifit-Final" target='blank'>repo.</a>
+                                            </div>
+
+                                        </div>
+
 
                                     </div>
                                 </div>
                                 <div className="col-md-4 coln">
+                                    <div className='box'>
+                                        <img src={fd} alt="" style={{ width: "100%", height: "50%" }} />
+                                        <div>
+                                            <h2>Frozen Delight</h2>
+                                            <p>
+                                                {/* "Frozen Delight" is an ice cream shop website created using the MERN stack . It allows users to browse a variety of ice cream flavors and purchase their favorite treats online. The site features a smooth user interface and secure payment options to provide an enjoyable shopping experience for ice cream lovers. */}
+                                                work in progress
+                                            </p>
+                                            <div className='tempo'>
+                                                <a href="#" target='blank'>demo</a>
+                                                <a href="https://github.com/Rising-entity/Frozen-Delight.git" target='blank'>repo.</a>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                                <div className="col-md-4 coln" >
+                                    <div className='box' >
+                                        <img src={newshub} alt="" style={{ width: "100%", height: "50%" }} />
+                                        <div>
+                                            <h2>News Hub</h2>
+                                            <p>News Hub is a dynamic and user-friendly website designed to deliver timely news and information to users. Powered by a robust Google News API, site aggregates news articles, headlines, and updates from diverse sources worldwide</p>
+                                            <div className='tempo'>
+                                                <a href="https://newshubforyou.netlify.app/" target='blank'>demo</a>
+                                                <a href="https://github.com/Rising-entity/news-app" target='blank'>repo.</a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className='d-flex justify-content-center' >
+                            <div className="row ">
+                                <div className="col-md-4 coln">
+                                    <div className='box'>
+                                        <img src={health} alt="" style={{ width: "100%", height: "50%" }} />
+                                        <div>
+                                            <h2>Health Monitoring Device</h2>
+                                            <p>It's a device created using ESP32 module, it measures health parameters such as BPM,body temperature,ECG, spo2</p>
+                                            <div className='tempo'>
+                                                <a href="https://ieeexplore.ieee.org/document/10544910" target='blank'>pulished research paper</a>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                {/* <div className="col-md-4 coln">
                                     <div className='box'>
                                         <h2>NewsHub</h2>
                                         <p>News Hub is a dynamic and user-friendly website designed to deliver timely news and information to
@@ -201,6 +267,7 @@ function Home() {
 
                                     </div>
                                 </div>
+
                                 <div className="col-md-4 coln">
                                     <div className='box'>
                                         <h2>N/A</h2>
@@ -208,8 +275,9 @@ function Home() {
                                         <a href="">demo</a>
                                         <a href="">repo.</a>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
+
                         </div>
 
 
@@ -223,18 +291,18 @@ function Home() {
                         <div>
                             <div className="languages">
                                 <h2>languages</h2>
-                                
+
 
                                 <div className="container">
                                     <div className="row justify-content-center">
                                         <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
-                                            <img src={c} alt="c lang"  />
+                                            <img src={c} alt="c lang" />
                                         </div>
                                         <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
-                                            <img src={cplus} alt="c++"  />
+                                            <img src={cplus} alt="c++" />
                                         </div>
                                         <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
-                                            <img src={python} alt="python"  />
+                                            <img src={python} alt="python" />
                                         </div>
                                         <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
                                             <img src={sql} alt="sql" />
