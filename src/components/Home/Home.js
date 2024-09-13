@@ -186,7 +186,7 @@ function Home() {
                                                 they input with seamless integration of the Nutrition API from API Ninjas. Additionally, users can also read
                                                 health-related news on the website through the integration of the Bing News API</p>
                                             <div className='tempo'>
-                                                <a href="https://64be7048d129ed106859a41c--cozy-tarsier-41bdab.netlify.app" target='blank'>Web Link</a>
+                                                <a href="https://nutrifitforyou.netlify.app" target='blank'>Web Link</a>
                                                 <a href="https://github.com/Rising-entity/Nutrifit-Final" target='blank'>GitHub</a>
                                             </div>
 
@@ -241,7 +241,7 @@ function Home() {
                                             <h2>Health Monitoring Device</h2>
                                             <p>It's a device created using ESP32 module, it measures health parameters such as BPM,body temperature,ECG, spo2</p>
                                             <div className='tempo'>
-                                                <a href="https://ieeexplore.ieee.org/document/10544910" target='blank'>pulished research paper</a>
+                                                <a href="https://ieeexplore.ieee.org/document/10544910" target='blank'>published research paper</a>
 
                                             </div>
                                         </div>
