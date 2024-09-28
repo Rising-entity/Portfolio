@@ -1,16 +1,18 @@
 .About {
-    height: 500px;
-    margin-top: 30px;
-
+    min-height: 500px;
+    padding-top: 12vh;
 }
 
 .About .info {
-    background-color: #e6e6e69c;
+    min-height: 457px;
+    /* background-color: #e6e6e69c; */
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: #FFC107 0px 0px 6px 0px;
+    margin: 10px auto;
+    text-align: center;
 }
 
 .About p {
@@ -19,28 +21,48 @@
 
 
 .About .skillSet .row {
+
     display: flex;
     justify-content: center;
-    text-align: center;
+
 }
 
-.About .skillSet .row div {
+.About .skillSet .row .sd {
+    /* margin: 10px 10px;
+    border-radius: 6px;
+    padding: 4px 0px;
+    text-align: center; */
+    box-shadow: #FFC107 0px -50px 36px -28px inset;
+
     margin: 10px 10px;
     border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    /* box-shadow: #FFC107 0px 0px 3px 0px; */
     padding: 4px 0px;
-}
-
-.skillSet img {
+    text-align: center;
     transition: transform 0.3s ease-in-out;
+
 }
 
-.skillSet img:hover {
+.About .skillSet .row div p {
+    text-align: center;
+    font-weight: bold;
+    margin: 6px 0px 0px 0px;
+}
+
+/* .skillSet img {
+    transition: transform 0.3s ease-in-out;
+} */
+
+.About .skillSet .row .sd:hover {
     transform: scale(1.1);
 }
 
+/* .skillSet img:hover {
+    transform: scale(1.1);
+} */
+
 @media (max-width: 700px) {
-    .carousel{
-      margin-bottom: 10px;
+    .carousel {
+        margin-bottom: 10px;
     }
 }

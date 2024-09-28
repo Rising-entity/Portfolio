@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #484747;
+    /* color: #484747; */
+    color: #c0bebe;
 
 
 }
@@ -10,8 +11,13 @@
 
 
 .Navbar .logo1 {
-    margin-left: 32px;
+    margin-left: 33px;
     width: 50px;
+}
+
+.Navbar .back {
+    width: 37px;
+    margin-left: 33px;
 }
 
 .Navbar nav {
@@ -24,30 +30,37 @@
     min-height: 10vh;
     padding-top: 10px;
     padding-bottom: 5px;
-    background: #f7f7f7;
-    box-shadow: 3px -2px 10px gray;
-    position: sticky;
-    top: 0px;
-    z-index: 2;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 
 
 }
 
 .Navbar nav a {
 
-    color: black;
+    color: #c0bebe;
+}
+
+.Navbar nav a:hover {
+    color: #FFC107;
+
 }
 
 .Home .section1 {
     width: 100%;
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #161616;
 
 }
 
 .Home .section1 #box1 {
+    padding-top: 10vh;
     width: 100%;
 }
 
@@ -58,18 +71,21 @@
 }
 
 .Home .section1 #box1 p {
+    margin-bottom: 2rem;
     width: 62%;
     font-size: 109%;
     text-align: center;
 }
 
 .Home .section1 #box1 h1 {
+    margin-bottom: 0.5rem;
     font-size: 450%;
     font-family: 'Poppins', sans-serif;
 
 }
 
 .Home .section1 #box1 h2 {
+    margin-bottom: 1rem;
     font-size: 241%;
     font-family: 'Poppins', sans-serif;
 
@@ -77,23 +93,24 @@
 }
 
 .Home .section1 #box1 a {
-    color: white;
+    color: black;
+    font-weight: 500;
     text-align: center;
     display: block;
     width: 174px;
     padding: 10px;
     text-decoration: none;
-    border-radius: 24px;
+    border-radius: 7px;
     margin: 10px;
-    background-color: black;
-    border: 2px solid black;
+    background-color: #FFC107;
+    border: 2px solid #FFC107;
 
 }
 
 .Home .section1 #box1 a:hover {
-    background-color: #f7f7f7;
+    background-color: #c0bebe;
     color: black;
-    border: 2px solid black;
+    border: 2px solid #c0bebe;
 }
 
 .Home .section1 #box1 h1,
@@ -104,9 +121,13 @@ p {
 
 /* section2 started */
 
+.Home .section2 {
+    background-color: #161616;
+
+}
 
 .Home .section2 h1 {
-    margin: 20px 0px;
+    padding: 20px 0px;
 
 }
 
@@ -119,7 +140,7 @@ p {
 }
 
 .Home .section2 .row .box {
-    box-shadow: 0px 0px 4px 0px #3d3c3c7d;
+    box-shadow: 0px 0px 3px 0px #ffc107a3;
     width: 84%;
     min-height: 104%;
     text-align: center;
@@ -151,17 +172,17 @@ p {
 .Home .section2 .coln a {
     margin: 0px 10px;
     text-decoration: none;
-    border: 2px solid black;
-    padding: 0px 10px 2px 10px;
+    padding: 4px 10px 4px 10px;
     font-size: 15px;
-    background: black;
-    border-radius: 10px;
-    color: white;
+    background: #ffc107;
+    border-radius: 8px;
+    color: black;
+    font-weight: 450;
 
 }
 
 .Home .section2 .coln a:hover {
-    background: white;
+    background: #c0bebe;
     color: black;
 
 }
@@ -169,7 +190,7 @@ p {
 .Home .section2 h2 {
     margin-top: .5rem;
     font-size: 1.5rem;
-    color: #2978b5;
+    /* color: #2978b5; */
 
 }
 
@@ -177,7 +198,7 @@ p {
 /* section3 started */
 
 .Home .section3 {
-
+    background-color: #161616;
     padding-bottom: 35px;
 
 }
@@ -202,6 +223,10 @@ p {
 
 
 /* section4 started */
+.Home .section4 {
+    background-color: #161616;
+}
+
 .Home .section4 h1 {
     margin-top: 29px;
     margin-bottom: 35px;
@@ -217,9 +242,11 @@ p {
 
 
 .Home .section4 #mail {
+    background: #c0bebe;
     margin: 0px auto;
     margin-bottom: 38px;
     display: block;
+    font-weight: 500;
     width: 100px;
     text-decoration: none;
     text-align: center;
@@ -235,9 +262,7 @@ p {
 }
 
 .Home .section4 #mail:hover {
-    background-color: black;
-    color: white;
-    border: 2px solid black;
+    background-color: #FFC107;
 }
 
 .Home .section4 {
@@ -245,9 +270,7 @@ p {
     justify-content: center;
 }
 
-.Home .section4 img {
-    width: 50px;
-}
+
 
 @media (max-width: 700px) {
     .Home .section1 #box1 p {
@@ -273,7 +296,7 @@ p {
     }
 
     .Home .tempo {
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     .Navbar {
@@ -282,5 +305,13 @@ p {
 
     .Navbar li {
         margin-left: 32px;
+    }
+
+    .Navbar .logo1 {
+        margin-left: 12px;
+    }
+
+    .Navbar .back {
+        margin-left: 12px;
     }
 }

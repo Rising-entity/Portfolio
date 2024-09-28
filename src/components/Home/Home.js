@@ -1,9 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import { useState } from "react";
 import { useLocation } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import { VANTA } from 'vanta';
-import logo1 from './images/logo1.png';
 import c from './images/c.png';
 import cplus from './images/c++.png';
 import python from './images/python.png';
@@ -25,59 +22,48 @@ import tailwind from './images/tailwind.png';
 import git from './images/git.png';
 import github2 from './images/github2.png';
 import './Home.css';
-import newshub from "./images/newshub.png";
-import nutrifit from "./images/nutrifit.png"
-import fd from "./images/fd.png"
-import health from "./images/health.png"
+import newshub from "./images/newshub.jpg";
+import nutrifit from "./images/nutrifit.jpg"
+import fd from "./images/fd.jpg"
+import health from "./images/health.jpg"
 
 
 
 
 
 function Home() {
-    const [mode, setMode] = useState('light');
-    const [bg, setBg] = useState('#f7f7f7');
-    const el = window.innerWidth < 768 ? '.Home' : '#myid';
-    const bdSize = window.innerWidth < 768 ? 0.5 : 1;
-    const speedLimit = window.innerWidth < 768 ? 2 : 5;
-
-    const toggleMode = () => {
-        if (mode === 'light') {
-            setMode('dark');
-            setBg('#07192f');
-        } else {
-            setMode('light');
-            setBg('#f7f7f7');
-        }
-    };
-
     const vantaRef = useRef(null);
 
     useEffect(() => {
-        // Initialize VANTA.BIRDS effect
-        vantaRef.current = VANTA.BIRDS({
-            el: '#myid',
+
+        vantaRef.current = VANTA.NET({
+            el: "#myid",
             mouseControls: true,
             touchControls: true,
             gyroControls: false,
-            minHeight: 400.00,
+            minHeight: 200.00,
             minWidth: 200.00,
             scale: 1.00,
             scaleMobile: 1.00,
-            backgroundColor: bg,
-            color1: 0xff35,
-            birdSize: 1,
-            speedLimit: 5
-        });
+            color: 0x4b4b51,
+            backgroundColor: 0x161616,
+            points: 9.00,
+            maxDistance: 22.00,
+            spacing: 20.00,
+            showDots: true
+        })
+
+
 
         // Cleanup function
         return () => {
-            // Destroy VANTA.BIRDS effect when component unmounts
+            // Destroy VANTA.net effect when component unmounts
             if (vantaRef.current) {
                 vantaRef.current.destroy();
             }
         };
-    }, [bg]);
+
+    }, []);
 
 
     const location = useLocation();
@@ -100,59 +86,14 @@ function Home() {
 
     return (
 
-        <div className="Home" style={{ background: (mode === "light" ? '#f7f7f7' : '#07192f') }}
+        <div className="Home"
         >
             <div  >
-
-                <div className="Navbar">
-                    <nav className="navbar navbar-expand-lg ">
-                        <div className="container-fluid">
-                            <Link className="navbar-brand" to="#">
-                                <img className="logo1" src={logo1} alt="" />
-                            </Link>
-                            <button
-                                className="navbar-toggler"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent"
-                                aria-controls="navbarSupportedContent"
-                                aria-expanded="false"
-                                aria-label="Toggle navigation"
-                            >
-                                <span className="navbar-toggler-icon" />
-                            </button>
-                            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul className="navbar-nav ms-auto mb-2 mb-lg-0" >
-                                    <li className="nav-item">
-                                        <Link className="nav-link" aria-current="page" to="/about">
-                                            about
-                                        </Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#sec2">
-                                            projects
-                                        </a>
-                                    </li>
-
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#sec4">
-                                            contacts
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-
-
-
 
                 <div className="section1" id='myid'>
                     <div id='box1'>
                         <h1>
-                            MAYANK <span style={{ color: "#2978b5" }}>ASHTEKAR</span>
+                            MAYANK <span style={{ color: "#FFC107" }}>ASHTEKAR</span>
                         </h1>
                         <h2>Web Developer</h2>
                         <div className='box12'>
@@ -161,32 +102,32 @@ function Home() {
                             </p>
                         </div>
 
-                        <div style={{ display: "flex", justifyContent: "center" }}>
+                        <div style={{ display: "flex", justifyContent: "center" }} id='sec2' ref={section2Ref}>
                             <a className="btn content-download button-main button-scheme" href={`${process.env.PUBLIC_URL}/Mayank Ashtekar Resume.pdf`} download="Resume" >Download Resume</a>
                         </div>
                     </div>
 
                 </div>
-                <hr style={{ margin: "0px" }} />
+                <div style={{ borderBottom: "0.1px solid #343a40" }}></div>
 
-                {/* //section2 started */}
-                <div id='myid2'>
+                <div id='myid2' >
+                    {/* //section2 started */}
 
-                    <div className="section2 " id='sec2' ref={section2Ref}>
-                        <h1 style={{ textAlign: "center" }}>my <span style={{ color: "#2978b5" }}>projects</span></h1>
+                    <div className="section2 " >
+                        <h1 style={{ textAlign: "center" }}>my <span style={{ color: "#ffc107" }}>projects</span></h1>
 
                         <div className='d-flex justify-content-center baseline' >
                             <div className="row ">
                                 <div className="col-md-4 coln">
                                     <div className='box'>
-                                        <img src={nutrifit} alt="" style={{ width: "100%", height: "50%" }} />
+                                        <img loading="lazy" src={nutrifit} alt="" style={{ width: "100%", height: "50%", opacity: "0.8", borderRadius: "7px" }} />
                                         <div>
                                             <h2>Nutri-fit</h2>
                                             <p>Nutri-Fit enables users to access the nutritional content of any food
                                                 they input with seamless integration of the Nutrition API from API Ninjas. Additionally, users can also read
                                                 health-related news on the website through the integration of the Bing News API</p>
                                             <div className='tempo'>
-                                                <a href="https://nutrifitforyou.netlify.app" target='blank'>Web Link</a>
+                                                {/* <a href="https://nutrifitforyou.netlify.app" target='blank'>Web Link</a> */}
                                                 <a href="https://github.com/Rising-entity/Nutrifit-Final" target='blank'>GitHub</a>
                                             </div>
 
@@ -197,15 +138,15 @@ function Home() {
                                 </div>
                                 <div className="col-md-4 coln">
                                     <div className='box'>
-                                        <img src={fd} alt="" style={{ width: "100%", height: "50%" }} />
+                                        <img loading="lazy" src={fd} alt="" style={{ width: "100%", height: "50%", opacity: "0.8", borderRadius: "7px" }} />
                                         <div>
                                             <h2>Frozen Delight</h2>
-                                            <p>
+                                            <p style={{ color: 'red' }}>
                                                 {/* "Frozen Delight" is an ice cream shop website created using the MERN stack . It allows users to browse a variety of ice cream flavors and purchase their favorite treats online. The site features a smooth user interface and secure payment options to provide an enjoyable shopping experience for ice cream lovers. */}
                                                 work in progress
                                             </p>
                                             <div className='tempo'>
-                                                <a href="#" target='blank'>Web Link</a>
+                                                {/* <a href="#" target='blank'>Web Link</a> */}
                                                 <a href="https://github.com/Rising-entity/Frozen-Delight.git" target='blank'>GitHub</a>
                                             </div>
                                         </div>
@@ -216,12 +157,12 @@ function Home() {
                                 </div>
                                 <div className="col-md-4 coln" >
                                     <div className='box' >
-                                        <img src={newshub} alt="" style={{ width: "100%", height: "50%" }} />
+                                        <img loading="lazy" src={newshub} alt="" style={{ width: "100%", height: "50%", opacity: "0.8", borderRadius: "7px" }} />
                                         <div>
                                             <h2>News Hub</h2>
                                             <p>News Hub is a dynamic and user-friendly website designed to deliver timely news and information to users. Powered by a robust Google News API, site aggregates news articles, headlines, and updates from diverse sources worldwide</p>
                                             <div className='tempo'>
-                                                <a href="https://newshubforyou.netlify.app/" target='blank'>Web Link</a>
+                                                {/* <a href="https://newshubforyou.netlify.app/" target='blank'>Web Link</a> */}
                                                 <a href="https://github.com/Rising-entity/news-app" target='blank'>GitHub</a>
                                             </div>
 
@@ -236,12 +177,12 @@ function Home() {
                             <div className="row ">
                                 <div className="col-md-4 coln">
                                     <div className='box'>
-                                        <img src={health} alt="" style={{ width: "100%", height: "50%" }} />
+                                        <img loading="lazy" src={health} alt="" style={{ width: "100%", height: "50%", opacity: "0.8", borderRadius: "7px" }} />
                                         <div>
                                             <h2>Health Monitoring Device</h2>
                                             <p>It's a device created using ESP32 module, it measures health parameters such as BPM,body temperature,ECG, spo2</p>
                                             <div className='tempo'>
-                                                <a href="https://ieeexplore.ieee.org/document/10544910" target='blank'>published research paper</a>
+                                                <a href="https://ieeexplore.ieee.org/document/10544910" target='blank'>Published Research Paper</a>
 
                                             </div>
                                         </div>
@@ -256,11 +197,13 @@ function Home() {
 
 
                     </div>
-                    <hr style={{ margin: "0px" }} />
+
+                    <div style={{ borderBottom: "1px solid #343a40" }}></div>
+
 
 
                     <div className="section3">
-                        <h1>skill-<span style={{ color: "#2978b5" }}>set</span></h1>
+                        <h1>skill-<span style={{ color: "#FFC107" }}>set</span></h1>
 
                         <div>
                             <div className="languages">
@@ -270,16 +213,16 @@ function Home() {
                                 <div className="container">
                                     <div className="row justify-content-center">
                                         <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
-                                            <img src={c} alt="c lang" />
+                                            <img loading="lazy" src={c} alt="c lang" />
                                         </div>
                                         <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
-                                            <img src={cplus} alt="c++" />
+                                            <img loading="lazy" src={cplus} alt="c++" />
                                         </div>
                                         <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
-                                            <img src={python} alt="python" />
+                                            <img loading="lazy" src={python} alt="python" />
                                         </div>
                                         <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
-                                            <img src={sql} alt="sql" />
+                                            <img loading="lazy" src={sql} alt="sql" />
                                         </div>
 
                                     </div>
@@ -293,22 +236,22 @@ function Home() {
                                 <div className="container">
                                     <div className="row justify-content-center">
                                         <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
-                                            <img src={html} alt="HTML" />
+                                            <img loading="lazy" src={html} alt="HTML" />
                                         </div>
                                         <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
-                                            <img src={css} alt="CSS" />
+                                            <img loading="lazy" src={css} alt="CSS" />
                                         </div>
                                         <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
-                                            <img src={js} alt="JavaScript" />
+                                            <img loading="lazy" src={js} alt="JavaScript" />
                                         </div>
                                         <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
-                                            <img src={react} alt="React" />
+                                            <img loading="lazy" src={react} alt="React" />
                                         </div>
                                         <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
-                                            <img src={nodejs} alt="Node.js" />
+                                            <img loading="lazy" src={nodejs} alt="Node.js" />
                                         </div>
                                         <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
-                                            <img src={mongo} alt="MongoDB" />
+                                            <img loading="lazy" src={mongo} alt="MongoDB" />
                                         </div>
                                     </div>
                                 </div>
@@ -324,22 +267,22 @@ function Home() {
                                 <div className="container">
                                     <div className="row justify-content-center">
                                         <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
-                                            <img src={vscode} alt="vscode" />
+                                            <img loading="lazy" src={vscode} alt="vscode" />
                                         </div>
                                         <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
-                                            <img src={bootstrap} alt="bootstrap" />
+                                            <img loading="lazy" src={bootstrap} alt="bootstrap" />
                                         </div>
                                         <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
-                                            <img src={tailwind} alt="tailwind" />
+                                            <img loading="lazy" src={tailwind} alt="tailwind" />
                                         </div>
                                         <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
-                                            <img src={netlify} alt="netlify" />
+                                            <img loading="lazy" src={netlify} alt="netlify" />
                                         </div>
                                         <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
-                                            <img src={git} alt="git" />
+                                            <img loading="lazy" src={git} alt="git" />
                                         </div>
                                         <div className="col-2 col-sm-1 d-flex justify-content-center mb-2">
-                                            <img src={github2} alt="github" />
+                                            <img loading="lazy" src={github2} alt="github" />
                                         </div>
                                     </div>
                                 </div>
@@ -350,30 +293,33 @@ function Home() {
                         </div>
 
                     </div>
-                    <hr style={{ margin: "0px" }} />
+
+                    <div style={{ borderBottom: "0.1px solid #343a40" }}></div>
+
 
                     <div className="section4" id='sec4' ref={contactRef}>
 
                         <div>
-                            <h1>contact</h1>
+                            <h1 style={{ color: "#FFC107" }}>contact</h1>
                             <a id='mail' href="mailto:ashtekarmayank@gmail.com" target='blank'>email me</a>
                             <h2>find me on</h2>
-                            <div>
-                                <a href="https://www.linkedin.com/in/ashtekarmayank/" target='blank'>  <img src={linkedin} alt="" /></a>
+                            <div style={{ marginTop: "20px" }}>
+                                <a href="https://www.linkedin.com/in/ashtekarmayank/" target='blank'>  <img loading="lazy" style={{ width: "39px", margin: "0px 40px 0px 0px" }} src={linkedin} alt="" /></a>
 
-                                <a href="https://www.instagram.com/rising.entity/" target='blank'><img src={instagram} alt="" /></a>
+                                <a href="https://www.instagram.com/rising.entity/" target='blank'><img loading="lazy" style={{ width: "39px", margin: "0px 35px 0px 0px" }} src={instagram} alt="" /></a>
 
-                                <a href="https://github.com/Rising-entity" target='blank'> <img style={{ width: "39px", margin: "0px 0px 0px 3px" }} src={github} alt="" /></a>
+                                <a href="https://github.com/Rising-entity" target='blank'> <img loading="lazy" style={{ width: "39px" }} src={github} alt="" /></a>
                             </div>
                         </div>
 
+
                     </div>
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", background: "#161616" }}>
                         <span style={{
-                            margin: "auto", paddingLeft: "35px", marginTop: "31px",
-                            color: "#02109d"
+                            margin: "auto", paddingLeft: "35px", marginTop: "31px", marginBottom: "10px"
                         }}>Created By Mayank Ashtekar</span>
-                        <a href="#myid">  <img src={arrow} alt="" style={{ width: "35px", marginTop: "20px" }} /></a>
+                        <a href="#myid">  <img loading="lazy" src={arrow} alt="" style={{ width: "29px", marginTop: "20px", marginRight: "6px" }} /></a>
 
                     </div>
 
